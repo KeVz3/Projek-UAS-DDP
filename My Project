@@ -1,0 +1,352 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    
+    string opsi;
+    
+    cout << "============ Welcome to The Forest of Wonder ============" << endl << "Press [ENTER] to start.";
+    cin.get();
+    
+    string nama;
+    cout << "Masukkan nama anda: ";
+    cin >> nama;
+    cout << "Bersiaplah untuk menelusuri The Forest of Wonder, " << nama << "!" << endl;
+    cout <<endl;
+    cout << "--------------------STORY--------------------"<<endl;
+    cout<<endl;
+    cout << "Narator :"<<endl;
+    cout << "Saat ini " << nama << " sedang menulusuri The Forest of Wonder yang terkenal misterius."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Disini " << nama << " menemukan beberapa jalan untuk ditempuh untuk mencari harta yang terpendam dalam The Forest of Wonder."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Konon disini diberitahukan ada harta yang sangat megah tersembunyi di dalam hutan ini."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Apakah " << nama << " bisa menemukan harta tersebut?"<< endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Nah, disini " << nama << " menemukan tiga jalan."<<endl;
+    system("pause");
+    cout << endl;
+    int pilih;
+    cout << "Narator :"<<endl;
+    cout << "Ada Jalan ke barat, ada jalan ke utara, dan ada jalan ke timur"<<endl;
+    system("pause");
+    cout <<endl;
+    cout << "Narator :"<< endl;
+    cout << "Jalan manakah yang " << nama << " akan pilih?"<< endl;
+    cout << "1. Jalan ke Barat"<<endl;
+    cout << "2. Jalan ke Utara"<<endl;
+    cout << "3. Jalan ke Timur"<<endl;
+    cout << "(1-3) : ";
+    cin >> pilih;
+    
+    switch (pilih){
+        case 1 :
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << nama << " memilih jalan ke barat."<<endl;
+        system("pause");
+        cout<<endl;
+        cout << "Narator :"<<endl;
+        cout << "Disini " << nama << " menulusuri jalan ke barat dan menemukan jalan buntu yang berisi sebuah teka-teki"<<endl;
+        system("pause");
+        cout <<endl;
+        cout << "Narator :"<<endl;
+        cout << "Dan disamping teka-teki ada sebuah sign yang mengatakan bahwa jika anda bisa menjawab teka-teki ini dengan benar, maka jalan akan terbuka dan jika salah maka anda akan kehilangan nyawa anda!"<<endl;
+        system("pause");
+        cout <<endl;
+        cout << "Teka-teki :"<<endl;
+        cout << "Tidak bergantung saat kita jalan atau berhenti, dia tetap jalan. Tapi bila dia berhenti, kita akan mati. Apa itu?" << endl;
+        cout << "Answer : ";
+        cin >> opsi;
+        if (opsi == "jantung"){
+            cout << endl;
+            cout << "Narator :"<<endl;
+            cout << "Selamat jawaban " << nama << " benar!"<<endl;
+        } else {
+            cout << endl;
+            cout << "Narator :"<<endl;
+            cout << nama << " mendengar sesuatu dari kejauhan, ternyata sebuah perangkap telah aktif dan "<< nama << " terperangkap pada perangkap itu. Dan akhirnya " << nama << " kehilangan nyawanya." <<endl;
+            system("pause");
+            cout<<endl;
+            cout << "Narator :"<<endl;
+            cout << "Game Over"<<endl;
+            return 0;
+        }
+        break;
+        
+        case 2 :
+        cout << endl;
+        cout << "Narator :"<<endl;
+    cout << nama << " memilih jalan ke utara."<<endl; system("pause");
+    cout <<endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " menelusuri jalan ke utara dan menemukan sebuah gua."<<endl;
+    system("pause");
+    cout<<endl;
+    cout << "Narator :"<<endl;
+    cout<< nama << "pun memasuki gua tersebut dan menemukan sebuah tulisan yang di ukir di atas batu."<<endl;
+    system("pause");
+    cout <<endl;
+    cout << "Narator :"<<endl;
+    cout << "Di tulisan itu di tanyakan sebuah pertanyaan yang cukup menarik."<<endl;
+    system("pause");
+    cout <<endl;
+    cout << "Pertanyaan :"<<endl;
+    cout << "Dia memakan segalanya; burung, hewan buas, pohon, bunga. Dia mengunyah besi, menggigit logam. Dia menggiling batu sebagai makanannya. Dia membunuh raja, menghancurkan kota dan melongsorkan gunung. Apakah dia?"<<endl; 
+    cout << "Answer : ";
+    cin >> opsi;
+    if (opsi == "waktu"){
+         cout << endl;
+         cout << "Narator :"<<endl;
+            cout << "Selamat jawaban " << nama << " benar!"<<endl;
+    } else {
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Tiba-tiba ada guncangan besar dari tanah yang mengakibatkan gua yang "<<nama << " tempati itu pun runtuh." <<endl;
+        system("pause");
+        cout<<endl;
+        cout << "Narator :"<<endl;
+        cout << "Game Over"<<endl;
+    }
+    break;
+    
+    case 3 :
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " memilih jalan timur."<<endl;
+    system("pause");
+    cout<<endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " berjalan ke arah timur dan menemukan sebuah jurang yang sangat dalam."<<endl;
+    system("pause");
+    cout <<endl;
+    cout<< "Narator :"<<endl;
+    cout << "Satu-satunya jalan untuk menyebrangi jurang tersebut adalah menggunakan jembatan yang hampir ambruk itu."<<endl;
+    system("pause");
+    cout<<endl;
+    cout<<"Narator :"<<endl;
+    cout<< nama << " pun menyebrangi jurang itu dengan memggunakan jembatan yang hampir ambruk itu."<<endl;
+    system("pause");
+    cout <<endl;
+    cout<< "Narator :"<<endl;
+    cout << "Saat sedang menyebrangi jurang tiba-tiba " << nama << " dihadang oleh binatang buas"<<endl;
+    system ("pause");
+    cout << endl;
+    
+	int Mhp = 15;
+	int Uhp = 20;
+	int stm = 20;
+	int move;
+	cout << "__________FIGHT__________"<<endl;
+	label :
+	cout << "Hp Binatang Buas : " << Mhp << endl;
+	cout << "Hp " << nama << " : " << Uhp << endl;
+	cout << "Stamina "<< nama <<  " : " << stm << endl;
+	cout << "(1) Pukul"<<endl;
+	cout << "(2) Tendang"<<endl;
+	cout << "(3) Lempar" <<endl;
+	cout << "(1-3) : ";
+	cin >> move;
+	system ("pause");
+	cout << endl;
+	if (move == 1){
+	    cout << nama <<" memukul bintang buas itu."<<endl;
+	    Mhp -= 1;
+	    stm -= 1;
+	    if (Mhp <= 0){
+	        cout <<endl;
+	        cout << nama <<" Menang"<< endl;
+	        goto lanjut;
+	    }
+	    if (Uhp <= 0){
+	        cout <<endl;
+	        cout << nama <<" Kalah"<< endl;
+	        cout << "Game Over";
+	        return 0;
+	    }
+	    cout << endl;
+	    cout << "Binatang buas itu menyerangmu."<<endl;
+	    Uhp -= 1;
+	    cout << endl;
+	}
+if (move == 2){
+	    cout << nama << " menendang binatang buas itu."<<endl;
+	    Mhp -= 2;
+	    stm -= 2;
+	    if (Mhp <= 0){
+	        cout<<endl;
+	        cout << nama << " Menang"<< endl;
+	        goto lanjut;
+	    }
+	    if (Uhp <= 0){
+	        cout<<endl;
+	        cout << nama << " Kalah"<< endl;
+	        cout << "Game Over";
+	        return 0;
+	    }
+	    cout << endl;
+	    cout << "Binatang buas itu mencakarmu."<<endl;
+	    Uhp -= 2;
+	    cout << endl;
+	}
+	if (move == 3){
+	    cout << nama << " melempar sesuatu kepada binatang buas itu."<<endl;
+	    Mhp -= 4;
+	    stm -= 3;
+	    if (Mhp <= 0){
+	        cout << endl;
+	        cout << nama << " Menang"<< endl;
+	        goto lanjut;
+	    }
+	    if (Uhp <= 0){
+	        cout<< endl;
+	        cout << nama << " Kalah"<< endl;
+	        cout << "Game Over";
+	        return 0;
+	    }
+	    cout << endl;
+	    cout << "Binatang buas itu mengigitmu."<<endl;
+	    Uhp -= 3;
+	    cout << endl;
+	} else {
+	    cout << "Kamu salah mengiput nomer, Silahkan coba lagi."<<endl;
+	    cout << endl;
+	    goto label;
+	}
+goto label;
+break;
+}
+
+
+lanjut :
+cout << endl;
+cout << "Narator : "<<endl;
+cout << "Setelah melewati rintangan tersebut, " << nama << " melanjutkan ekplorasinya." << endl;
+system("pause");
+cout << endl;
+cout << "Narator :"<<endl;
+cout << "Dan diujung ekplorasi " << nama << ", lagi-lagi jalan terbagi menjadi dua."<<endl;
+system("pause");
+cout << endl;
+cout << "Narator :"<<endl;
+cout << "Jalan manakah yang akan dipilih " << nama << " lagi?"<<endl;
+cout << "1. Jalan ke Kiri"<<endl;
+cout << "2. Jalan ke Kanan"<<endl;
+cout << "(1-2) : ";
+cin >> pilih;
+
+switch (pilih){
+    case 1 :
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " memilih jalan yang ke kiri."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Di tengah-tengah perjalanan " << nama << " merasa ada yang aneh dengan tanah yang dipijakinya."<<endl;
+    system("pause");
+    cout <<endl;
+    cout << "Narator :"<<endl;
+    cout << "Ternyata tanah yang dipijakinya adalah lumpur hisap."<< endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " pun berusaha untuk keluar dari lumpur hisap itu, akan tetapi semakin dia banyak bergerak semakin cepat pula dia terhisap."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Setelah itu, munculah sebuah tanda yang mengatakan bahwa jika anda ingin lolos dari lumpur hisap itu, maka anda harus menjawab teka-teki ini."<< endl;
+    system ("pause");
+    cout <<endl;
+    cout << "Teka-teki :"<<endl;
+    cout << "Pertama, bagian luarnya dibuang, bagian dalamnya dimasak. Kemudian, bagian luarnya dimakan, bagian dalamnya dibuang. Apakah itu?"<<endl;
+    cout << "Answer : ";
+    cin >> opsi;
+    if (opsi == "jagung"){
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Selamat jawaban " << nama << " benar!!"<< endl;
+        system("pause");
+        cout <<endl;
+        cout << "Narator :"<<endl;
+        cout << "Tiba-tiba seutas terjatuh dari ranting pohon dan menyelamatkan "<< nama << " dari lumpur hisap tersebut." << endl;
+        goto again;
+    } else {
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Yah, jawaban anda salah dan anda pun tak bisa keluar dari lumpur hisap itu." << endl;
+        system("pause");
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Game Over.";
+        return 0;
+    }
+    break;
+    
+    case 2 :
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << nama << " memilih jalan yang ke kanan."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<< endl;
+    cout << "Diujung perjalanan " << nama << " menemukan sungai yang berisikan ikan piranha."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Di pinggir sungai tersebut ada sebuah plang yang mengatakan bahwa jika anda dapat menjawab pertanyaan ini, maka jembatan batu akan bermunculan dari sungai."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Pertanyaan :"<<endl;
+    cout << "Ada suatu bilangan, yang jika dikalikan dengan bilangan berapa pun, hasilnya tetap sama. Bilangan apakah yang dimaksud?"<<endl;
+    cout << "Note : input menggunakan huruf."<<endl;
+    cout << "Answer : ";
+    cin >> opsi;
+    if (opsi == "nol"){
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Selamat jawaban " << nama << " benar!"<<endl;
+        system("pause");
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Setelah itu, batu-batu bermunculan dari bawah sungai sampai ke permukaan sungai. Dan " << nama << " pun menyebrangi sungai tersebut dengan selamat."<< endl;
+        goto again;
+    } else {
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Yah, jawaban "<< nama << " salah."<<endl;
+        system("pause");
+        cout << endl;
+        cout << "Narator :"<< endl;
+        cout << "Maka dari itu jembatan batu tidak akan muncul dan " << nama << " tidak akan pernah melewati sungai itu."<<endl;
+        system("pause");
+        cout << endl;
+        cout << "Narator :"<<endl;
+        cout << "Game Over."<<endl;
+        return 0;
+    }
+   break;
+}
+    again :
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "Akhirnya, setelah melewati berbagai rintangan " << nama << " menemukan harta yang legendaris itu."<<endl;
+    system("pause");
+    cout << endl;
+    cout << "Narator :"<<endl;
+    cout << "The End.";
+    
+    return 0;
+}
