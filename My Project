@@ -7,11 +7,12 @@ int main(){
     
     string opsi;
     
+    start :
     cout << "============ Welcome to The Forest of Wonder ============" << endl << "Press [ENTER] to start.";
     cin.get();
-    
+  
     string nama;
-    cout << "Masukkan nama anda: ";
+    cout << "Masukkan nama anda : ";
     cin >> nama;
     cout << "Bersiaplah untuk menelusuri The Forest of Wonder, " << nama << "!" << endl;
     cout <<endl;
@@ -91,7 +92,27 @@ int main(){
             cout<<endl;
             cout << "Narator :"<<endl;
             cout << "Game Over"<<endl;
-            return 0;
+            cout << endl;
+            c :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            goto start;
+            cout << endl;
+        }
+        if (jawab == "No"){
+        return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto c;
+        }
+          
         }
         break;
         
@@ -128,6 +149,26 @@ int main(){
         cout<<endl;
         cout << "Narator :"<<endl;
         cout << "Game Over"<<endl;
+        cout << endl;
+        g :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
+        return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto g;
+        }
     }
     break;
     
@@ -183,7 +224,26 @@ int main(){
 	        cout <<endl;
 	        cout << nama <<" Kalah"<< endl;
 	        cout << "Game Over";
-	        return 0;
+	        cout << endl;
+	        h :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
+        return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto h;
+        }
 	    }
 	    cout << endl;
 	    cout << "Binatang buas itu menyerangmu."<<endl;
@@ -203,7 +263,26 @@ if (move == 2){
 	        cout<<endl;
 	        cout << nama << " Kalah"<< endl;
 	        cout << "Game Over";
-	        return 0;
+	        cout << endl;
+	        i :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
+        return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto i;
+        }
 	    }
 	    cout << endl;
 	    cout << "Binatang buas itu mencakarmu."<<endl;
@@ -223,7 +302,26 @@ if (move == 2){
 	        cout<< endl;
 	        cout << nama << " Kalah"<< endl;
 	        cout << "Game Over";
-	        return 0;
+	        cout << endl;
+	        e :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
+        return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto e;
+        }
 	    }
 	    cout << endl;
 	    cout << "Binatang buas itu mengigitmu."<<endl;
@@ -310,7 +408,26 @@ switch (pilih){
         cout << endl;
         cout << "Narator :"<<endl;
         cout << "Game Over.";
+        cout << endl;
+        d :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
         return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto d;
+        }
     }
     break;
     
@@ -354,7 +471,26 @@ switch (pilih){
         cout << endl;
         cout << "Narator :"<<endl;
         cout << "Game Over."<<endl;
+        cout << endl;
+        f :
+        string jawab;
+        cout << "Narator :"<<endl;
+        cout << "Apakah anda ingin bermain lagi?"<<endl;
+        cout << "Yes or No : ";
+        cin >> jawab;
+        if (jawab == "Yes"){
+            system("cls");
+            cout << endl;
+            goto start;
+        }
+        if (jawab == "No"){
         return 0;
+        } else {
+            cout << endl;
+            cout << "Format yang anda input salah."<< endl;
+            cout << endl;
+            goto c;
+        }
     }
    break;
 }
